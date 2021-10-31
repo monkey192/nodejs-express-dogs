@@ -4,7 +4,7 @@ info:
   description: Demo API
   version: 1.0.0
 servers:
-  - url: http://api.example.com/v1
+  - url: http://api.example.com
     description: API endpoint
 paths:
   /dogs:

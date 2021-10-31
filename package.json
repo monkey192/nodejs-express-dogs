@@ -11,7 +11,8 @@
     "wait:server": "run-s boot:server",
     "wait": "sleep 15",
     "boot:server": "nodemon --delay 1 --inspect=localhost:9300 ./dist/index.js",
-    "build:server": "ttsc -p ./tsconfig.json"
+    "build:server": "ttsc -p ./tsconfig.json",
+    "start:production": "node ./dist/index.js"
   },
   "author": "Monkey",
   "license": "MIT",
