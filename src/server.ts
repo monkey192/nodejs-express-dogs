@@ -8,8 +8,7 @@ class Server {
   port: string = process.env.PORT || '3000';
   app = express();
   constructor() {
-    const api = yaml.load(fs.readFileSync("swagger/api.yaml", "utf-8"));
-
+    const api = yaml.load(fs.readFileSync("./api.yaml", "utf-8"));
     openapi.initialize({
       app: this.app,
       apiDoc: api,

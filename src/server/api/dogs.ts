@@ -12,7 +12,7 @@ const dogList = [
 ]
 
 export const get: Operation = async (req, res) => {
-    console.log("get /dogs");
+    console.log("GET /dogs");
     res.status(200);
     res.json(dogList);
     return res;

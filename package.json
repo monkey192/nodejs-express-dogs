@@ -4,12 +4,14 @@
   "description": "Demo for Nodejs, Expressjs, OpenAPI",
   "main": "index.ts",
   "scripts": {
+    "nodemon": "nodemon src/index.ts",
     "start": "npm-run-all start:server",
     "start:server": "run-p watch:server wait:server",
-    "watch:server": "ttsc -p ./tsconfig.json",
+    "watch:server": "ttsc -w -p ./tsconfig.json",
     "wait:server": "run-s boot:server",
-    "wait": "timeout 15",
-    "boot:server": "nodemon ./dist/index.js"
+    "wait": "sleep 15",
+    "boot:server": "nodemon --delay 1 --inspect=localhost:9300 ./dist/index.js",
+    "build:server": "ttsc -p ./tsconfig.json"
   },
   "author": "Monkey",
   "license": "MIT",

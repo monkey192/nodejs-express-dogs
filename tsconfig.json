@@ -11,7 +11,7 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "preserveConstEnums": true,
-    "outDir": "./dist/server",
-    "mapRoot": "./dist/server",
+    "outDir": "./dist",
+    "mapRoot": "./dist",
   }
 }
