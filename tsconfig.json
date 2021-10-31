@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "removeComments": false,
     "target": "es6",
-    "rootDir": "./",
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
-    
+    "preserveConstEnums": true,
   }
 }
