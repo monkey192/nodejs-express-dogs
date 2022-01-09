@@ -16,7 +16,7 @@ using `swagger` for definition API (very simple) and use it in project
 - Run it on [AWS ECS](https://aws.amazon.com/ecs/)
 
 ### Architecture
-At first, i do the above things by manual then All infra and cicd setting will be implemented as code.  
+At first, i do the above things manually then All infra and cicd settings will be implemented as code.  
  (will be created in another repo)
 
 <img src="images/architecture.png">
