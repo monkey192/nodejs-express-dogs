@@ -8,9 +8,13 @@ phases:
     - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
     - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
     - IMAGE_TAG=${COMMIT_HASH:=latest}
+    - echo npm install
+    - npm i
   build:
     commands:
     - echo Build started on `date`
+    - echo build source
+    - npm run build:server
     - echo Building the Docker image...
     - echo $REPOSITORY_URI
     - echo $IMAGE_TAG
