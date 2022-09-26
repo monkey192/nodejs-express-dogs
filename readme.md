@@ -20,3 +20,21 @@ At first, i do the above things manually then All infra and cicd settings will b
  (will be created in another repo)
 
 <img src="images/architecture.png">
+
+
+### Test
+```sh
+npm i
+npm run start
+```
+
+-　sample curl:　Get dogs list 
+```sh
+curl --location --request GET 'http://localhost:3000/dogs' \
+--header 'User-Agent: sample'
+```
+
+- healthcheck
+```sh
+curl --location --request GET 'http://localhost:3000/healthcheck' --header 'User-Agent: sample'
+```
